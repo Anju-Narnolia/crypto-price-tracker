@@ -9,7 +9,7 @@ const cryptoSlice = createSlice({
   reducers: {
     updatePrices: (state) => {
       state.assets = state.assets.map(asset => {
-        const rand = () => (Math.random() * 0.02 - 0.01);
+        const rand = () => (Math.random() * 0.02 - 0.01); 
         const priceChange = rand();
         const price = +(asset.price * (1 + priceChange)).toFixed(2);
         const volume = +(asset.volume_24h * (1 + rand())).toFixed(0);
