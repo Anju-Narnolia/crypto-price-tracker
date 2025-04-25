@@ -1,54 +1,64 @@
-# React + TypeScript + Vite
+# 📈 Real-Time Crypto Price Tracker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive **React + Vite + TypeScript + Redux Toolkit** application that simulates real-time tracking of cryptocurrency prices. Inspired by platforms like CoinMarketCap, this app demonstrates dynamic data updates and centralized state management using Redux.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🎯 Objective
 
-## Expanding the ESLint configuration
+Build a real-time crypto price tracker that:
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- Displays 5 crypto assets (BTC, ETH, USDT, etc.) in a table.
+- Simulates WebSocket updates using `setInterval`.
+- Uses Redux Toolkit to manage all state.
+- Makes the UI responsive and color-coded for price changes.
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+---
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🛠️ Tech Stack
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- **React** – Frontend framework
+- **Vite** – Build tool for fast development
+- **TypeScript** – For type-safe coding
+- **Redux Toolkit** – State management
+- **Tailwind CSS**- For Styling
+- **Mock WebSocket** – Simulated via `setInterval`
+- **Static Chart** – 7D chart using image
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+---
+
+## 📊 Features
+
+- 🧠 **Redux-Only State**: All crypto data is stored and updated via Redux state.
+- 🔄 **Simulated Live Updates**: Every 1–2 seconds, price, % change, and 24h volume are updated.
+- 🎨 **Color-Coded Changes**: Positive changes are shown in green, negative in red.
+- 📱 **Responsive Table**: Viewable on all screen sizes.
+- 📉 **Static 7D Chart**: Representing weekly trends.
+
+---
+
+### 🔁 State Flow
+
+1. Initial crypto data is loaded into Redux.
+2. A mock WebSocket (via `setInterval`) randomly updates prices and volumes.
+3. Updates are dispatched through Redux actions.
+4. The UI listens to the Redux store via selectors and re-renders on change.
+
+---
+
+## 🖥️ UI Table Structure
+
+| # | Logo | Name | Symbol | Price | 1h % | 24h % | 7d % | Market Cap | 24h Volume | Circulating Supply | Max Supply | 7D Chart |
+|---|------|------|--------|-------|------|-------|------|-------------|-------------|----------------------|-------------|----------|
+
+---
+
+## 📁 Getting Started
+
+### 1. Clone the Repo
+git clone https://github.com/your-username/crypto-tracker.git
+cd crypto-tracker
+### 2. Install Dependencies
+npm install
+### 3. Start Development Server
+npm run dev
