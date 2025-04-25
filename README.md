@@ -56,7 +56,8 @@ Build a real-time crypto price tracker that:
 ## 📁 Getting Started
 
 ### 1. Clone the Repo
-git clone https://github.com/your-username/crypto-tracker.git
+git clone https://github.com/your-username/crypto-tracker.git 
+
 cd crypto-tracker
 ### 2. Install Dependencies
 npm install
