@@ -24,7 +24,7 @@ const CryptoTable = () => {
   const assets = useSelector((state: RootState) => state.crypto.assets);
 
   return (
-    <div className="">
+    <div className="overflow-x-auto">
       <table className="min-w-full border border-gray-300">
         <thead className="text-md text-gray-700 uppercase bg-gray-100 ">
           <tr>

@@ -17,7 +17,7 @@ function App() {
 
   return (
     <div className="m-5">
-      <h1 className="flex justify-center gap-3 text-4xl p-5">
+      <h1 className="text-center">
         📈 Real-Time Crypto Tracker
       </h1>
       <Table />
