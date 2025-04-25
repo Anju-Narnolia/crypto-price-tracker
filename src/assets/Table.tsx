@@ -1,5 +1,4 @@
 import { useSelector } from "react-redux";
-// import { SiEthereum } from "react-icons/si";
 interface CryptoAsset {
   id: number;
   logo: string;

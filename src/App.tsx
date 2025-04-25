@@ -1,8 +1,8 @@
-import React, { useEffect } from "react";
 import "./App.css";
 import { useDispatch } from "react-redux";
 import { updatePrices } from "./assets/slice";
 import Table from "./assets/Table";
+import { useEffect } from "react";
 
 function App() {
   const dispatch = useDispatch();
