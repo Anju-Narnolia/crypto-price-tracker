@@ -6,7 +6,7 @@ export default function Hero() {
     return (
         <div className="">
             <section
-                className="w-full min-h-screen flex flex-col md:flex-row justify-between md:px-24 bg-gradient-to-l to-red-200 via-red-100 from-red-100">
+                className="w-full min-h-screen flex flex-col md:flex-row justify-between md:pl-20 bg-gradient-to-l to-red-200 via-red-100 from-red-100">
                 {/* Left Text Section */}
                 <div className="flex flex-col gap-6 max-w-5xl md:py-20 justify-center md:text-start text-center">
                     <h1 className="md:text-7xl text-4xl font-bold leading-22 text-black ">
@@ -48,7 +48,7 @@ export default function Hero() {
                 </div>
 
                 {/* Right Image Section */}
-                <div className="relative  md:mt-0">
+                <div className="relative ">
                     <img
                         src={girl}
                         alt="resume success"
