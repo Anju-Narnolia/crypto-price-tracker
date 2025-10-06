@@ -8,21 +8,21 @@ export default function Hero() {
             <section
                 className="w-full min-h-screen flex flex-col md:flex-row justify-between md:pl-20 bg-gradient-to-l to-red-200 via-red-100 from-red-100">
                 {/* Left Text Section */}
-                <div className="flex flex-col gap-6 max-w-5xl md:py-20 justify-center md:text-start text-center">
-                    <h1 className="md:text-7xl text-4xl font-bold leading-22 text-black ">
+                <div className="flex flex-col gap-6 max-w-5xl py-10 md:py-20 justify-center md:text-start text-center">
+                    <h1 className="md:text-7xl text-4xl font-bold leading-12 md:leading-22 text-black ">
                         Your Resume <br />
                         <span className="relative text-red-600 font-bold inline-block">
                             Deserves A Yes
                             {/* <!-- Top underline: short + slight curve --> */}
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 30"
-                                className="absolute -bottom-2 -left-20 w-full h-6">
+                                className="absolute md:-bottom-2 bottom-0 md:-left-20 w-full h-2 md:h-6">
                                 <path d="M2 20 Q 125 10, 448 20"
                                     className="stroke-red-600" strokeWidth="5" fill="none" />
                             </svg>
 
                             {/* <!-- Bottom underline: longer + sits lower --> */}
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 40"
-                                className="absolute -bottom-5 -left-0 w-full h-6">
+                                className="absolute md:-bottom-5 -bottom-3 md:-left-0 w-full md:h-6">
                                 <path d="M2 25 Q 150 10, 798 25"
                                     className="stroke-red-600" strokeWidth="5" fill="none" />
                             </svg>
@@ -67,7 +67,7 @@ export default function Hero() {
                             <p className="text-gray-700 font-medium text-md md:text-xl">Instructor Rating</p></div>
                     </div>
                     {/* Resume Count */}
-                    <div className="absolute md:bottom-30 md:right-0 right-10 bottom-10 p-3 bg-white md:px-4 md:py-6  rounded-xl shadow-lg  items-center flex gap-3">
+                    <div className="absolute md:bottom-30 md:right-15 right-10 bottom-10 p-3 bg-white md:px-4 md:py-6  rounded-xl shadow-lg  items-center flex gap-3">
                         <GraduationCap className="fill-red-400 stroke-red-400 w-15 h-15 md:text-6xl md:w-20 md:h-20" />
                         <div>
                             <h3 className=" font-bold text-2xl md:text-5xl">260+</h3>
