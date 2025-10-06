@@ -8,7 +8,7 @@ export default function Hero() {
             <section
                 className="w-full min-h-screen flex flex-col md:flex-row justify-between md:px-24 bg-gradient-to-l to-red-200 via-red-100 from-red-100">
                 {/* Left Text Section */}
-                <div className="flex flex-col gap-6 max-w-4xl md:py-20 justify-center md:text-start text-center">
+                <div className="flex flex-col gap-6 max-w-5xl md:py-20 justify-center md:text-start text-center">
                     <h1 className="md:text-7xl text-4xl font-bold leading-22 text-black ">
                         Your Resume <br />
                         <span className="relative text-red-600 font-bold inline-block">
